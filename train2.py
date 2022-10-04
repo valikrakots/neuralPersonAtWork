@@ -74,4 +74,4 @@ for epoch in range(10):  # loop over the dataset multiple times
 print('Finished Training')
 
 PATH = './torch_video_net.pth'
-torch.save(net.state_dict(), PATH)
+torch.save(net, PATH)

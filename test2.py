@@ -44,8 +44,7 @@ test_set = DataLoader(test_dataset, shuffle=False, batch_size=1)
 
 
 with torch.no_grad():
-    model = Net()
-    model.load_state_dict(torch.load('torch_video_net.pth'))
+    model = torch.load('torch_video_net.pth')
     model.eval()
 
     total_correct = 0.0
